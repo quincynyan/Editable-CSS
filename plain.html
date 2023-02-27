@@ -4,36 +4,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Editable CSS</title>
-		<style>
-			.css-editor {
-				background-color: #252525;
-				padding: 20px;
-				border-radius: 5px;
-				color: white;
-				font-family: monospace;
-				font-size: 1rem;
-				white-space: pre;
-				width: calc(100% - 40px);
-				min-height: 50vh;
-				max-height: calc(100% - 40px);
-				overflow: auto;
-			}
-
-			.back-button {
-				background-color: lightgreen;
-				color: white;
-				border: none;
-				border-radius: 5px;
-				padding: 10px;
-				font-size: 1rem;
-				font-weight: 600;
-				cursor: pointer;
-			}
-		</style>
 	</head>
 	<body>
 		<style
-			class="css-editor"
 			contenteditable
 			style="display: block; white-space: pre"
 			onkeydown="onKeyDown(event)"
@@ -45,30 +18,7 @@
 			html {
 				background-color: blue;
 			}
-
-			.example {
-				font-family: "Comic sans ms";
-				border: #252525;
-			}
 		</style>
-		<div class="example">
-			<h1>Example</h1>
-			<p>This is an example of how you can use this editor</p>
-		</div>
-		<div id="root"></div>
-		<br />
-		<hr />
-		<br />
-		<div>
-			<a href="./"
-				><button class="back-button">&#8592; Go back</button></a
-			>
-			<a href="./plain">
-				<button class="back-button">
-					&#8594; Barebone minimum plain editor
-				</button></a
-			>
-		</div>
 	</body>
 	<script>
 		function onKeyDown(e) {
